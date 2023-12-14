@@ -42,7 +42,7 @@ let disconnectTimer
 
   try {
     // Conéctate al servidor OPC-UA
-    await client.connect("opc.tcp://localhost:4840");
+    await client.connect("opc.tcp://172.31.12.58:4840");
 
     // Crea una sesión
     const session = await client.createSession();
